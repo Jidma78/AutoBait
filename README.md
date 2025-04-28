@@ -74,3 +74,20 @@ python3 main.py
 - 🖥️ Starts passive network sniffing.
 - 🔥 SSH honeypot auto-activates only when a scan or brute-force is detected.
 
+## 📋 Requirements
+Package | Version
+Python | 3.9+
+asyncssh | ≥ 2.13
+scapy | ≥ 2.5
+openai | ≤ 0.28
+aiofiles | ≥ 23.1
+
+
+
+## 🎯 How AutoBait Behaves
+- If the attacker uses normal commands (e.g., ls, cat, cd, pwd) → AutoBait answers locally from its simulated filesystem.
+- If the attacker sends an unknown or complex command (e.g., find /opt -name '*.sh') → AutoBait calls the LLM to invent a realistic bash output, keeping the deception perfect.
+➡️ Mix between static simulation and dynamic generation for maximum realism.
+
+
+
