@@ -24,6 +24,38 @@ It automatically **sniffs the network** for port scans and brute-force attempts,
 | 📜 Lightweight logging      | Neat session logs (JSONL format) and profiling reports                     |
 
 
+## 🛠️ Project Structure
 
-
-AutoBait/ │ ├── core/ # Traffic sniffer, honeypot launcher, logger ├── detection/ # SYN scan and brute-force detection ├── honeypot/ # Filesystem simulation (filesystem.py) ├── prompt/ # Prompts for LLM (system prompt, scenario, profiling) ├── output/ │ ├── log/ # Logs (honeypot sessions, IDS alerts) │ └── sessions/ # Attacker session profiles ├── utils/ # Helpers (network info, etc.) ├── main.py # Entry point ├── honeyssh.py # SSH honeypot logic └── script.sh # Quick setup
+```bash
+AutoBait/
+│
+├── core/             # Traffic sniffer, honeypot launcher, logger
+│   ├── honeypot_launcher.py
+│   ├── logger.py
+│   ├── shared_state.py
+│   └── sniffer.py
+│
+├── detection/        # SYN scan and brute-force detection
+│   ├── bruteforce.py
+│   ├── syn_scan.py
+│   └── tcp_flag_decoder.py
+│
+├── honeypot/         # Filesystem simulation
+│   └── filesystem.py
+│
+├── prompt/           # Prompts for LLM (system prompt, scenario, profiling)
+│   ├── profile_attacker.txt
+│   ├── scenario.txt
+│   └── system.txt
+│
+├── output/
+│   ├── log/          # Logs (honeypot sessions, IDS alerts)
+│   └── sessions/     # Attacker session profiles
+│
+├── utils/            # Helpers (network info, etc.)
+│   └── netinfo.py
+│
+├── main.py           # Entry point (launches sniffer and honeypot)
+├── honeyssh.py       # SSH honeypot core logic
+├── script.sh         # Quick setup script
+└── requirements.txt  # Python dependencies
