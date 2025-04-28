@@ -98,6 +98,7 @@ AutoBait simulates a real Ubuntu 20.04 server:
 - /var/backup/mysql/ with production database dumps
 - Correct permission handling (Permission denied without root)
 
+
 ## 🧠 Attacker Profiling
 
 When the attacker types several commands, AutoBait:
@@ -112,12 +113,15 @@ Suspected goal: Data exfiltration.
 ```
 
 
+
 ## 🐍 Why AutoBait is Different
 
 ❌ Not static: activates only on real attacks.
 🧠 Hybrid intelligence: Filesystem + LLM for perfect responses.
 🎯 Profiles attacker tactics automatically.
 ⚡ Extremely lightweight, fast to deploy.
+
+
 
 # 🚀 Stay stealthy. Stay sharp. Deploy AutoBait.
 
