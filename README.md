@@ -119,6 +119,8 @@ Suspected goal: Data exfiltration.
 🎯 Profiles attacker tactics automatically.
 ⚡ Extremely lightweight, fast to deploy.
 
+# 🚀 Stay stealthy. Stay sharp. Deploy AutoBait.
+
 
 
 
