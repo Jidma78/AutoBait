@@ -116,10 +116,10 @@ Suspected goal: Data exfiltration.
 
 ## 🐍 Why AutoBait is Different
 
-❌ Not static: activates only on real attacks.
-🧠 Hybrid intelligence: Filesystem + LLM for perfect responses.
-🎯 Profiles attacker tactics automatically.
-⚡ Extremely lightweight, fast to deploy.
+- ❌ Not static: activates only on real attacks.
+- 🧠 Hybrid intelligence: Filesystem + LLM for perfect responses.
+- 🎯 Profiles attacker tactics automatically.
+- ⚡ Extremely lightweight, fast to deploy.
 
 
 
