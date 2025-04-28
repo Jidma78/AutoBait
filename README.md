@@ -3,13 +3,12 @@
 
 AutoBait is a lightweight LLM-powered honeypot designed to dynamically wake up only when an attack is detected.
 
-It automatically sniffs the network for port scans and brute-force attempts, and only then activates a realistic fake SSH server that:
-
-    - Simulates a real Linux filesystem,
-    - Handles real commands internally when possible,
-    - Delegates unknown commands to an LLM for realistic bash-style answers,
-    - Profiles the attacker behavior,
-    - Logs everything neatly for later analysis.
+It automatically **sniffs the network** for port scans and brute-force attempts, and only then **activates** a realistic **fake SSH server** that:
+- **Simulates** a real Linux filesystem,
+- **Handles real commands** internally when possible,
+- **Delegates unknown commands** to an **LLM** for realistic bash-style answers,
+- **Profiles** the attacker behavior,
+- **Logs** everything neatly for later analysis.
 
 
 ## ✨ Key Features
