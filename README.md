@@ -58,3 +58,14 @@ AutoBait/
 ├── script.sh         # Quick setup script
 └── requirements.txt  # Python dependencies
 
+
+
+
+## 🚀 Quick Start
+
+```bash
+git clone https://github.com/Jidma78/AutoBait.git
+cd AutoBait
+bash script.sh
+source .venvv/bin/activate
+python3 main.py
