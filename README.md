@@ -89,5 +89,23 @@ aiofiles | ≥ 23.1
 - If the attacker sends an unknown or complex command (e.g., find /opt -name '*.sh') → AutoBait calls the LLM to invent a realistic bash output, keeping the deception perfect.
 ➡️ Mix between static simulation and dynamic generation for maximum realism.
 
+## 📦 Filesystem Simulation
+
+AutoBait simulates a real Ubuntu 20.04 server:
+
+- /home/devops/ with AWS keys, .ssh/ folder, bash history...
+- /opt/jenkins/ with deploy scripts and Slack webhook leaks
+- /var/backup/mysql/ with production database dumps
+- Correct permission handling (Permission denied without root)
+
+## 🧠 Attacker Profiling
+
+When the attacker types several commands, AutoBait:
+
+- Captures their behavior,
+- Asks an LLM to summarize the attacker's goals,
+- Saves a full profiling report under output/sessions/.
+
+
 
 
