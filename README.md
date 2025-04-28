@@ -71,6 +71,6 @@ source .venvv/bin/activate
 python3 main.py
 ```
 
-- **🖥️ Starts passive network sniffing.
-- **🔥 SSH honeypot auto-activates only when a scan or brute-force is detected.
+- 🖥️ Starts passive network sniffing.
+- 🔥 SSH honeypot auto-activates only when a scan or brute-force is detected.
 
