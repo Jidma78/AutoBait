@@ -105,6 +105,20 @@ When the attacker types several commands, AutoBait:
 - Captures their behavior,
 - Asks an LLM to summarize the attacker's goals,
 - Saves a full profiling report under output/sessions/.
+example :
+```bash
+Attacker attempted to access cloud credentials and production database.
+Suspected goal: Data exfiltration.
+```
+
+
+## 🐍 Why AutoBait is Different
+
+❌ Not static: activates only on real attacks.
+🧠 Hybrid intelligence: Filesystem + LLM for perfect responses.
+🎯 Profiles attacker tactics automatically.
+⚡ Extremely lightweight, fast to deploy.
+
 
 
 
