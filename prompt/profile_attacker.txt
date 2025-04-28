@@ -1,0 +1,20 @@
+You are a cybersecurity analyst specialized in attacker behavior profiling.
+
+The following is a list of Linux commands entered by an intruder connected to an SSH honeypot:
+
+IP: {ip}
+Commands:
+{commands}
+
+Analyze this session and answer:
+1. **Objective**: What is the attacker trying to achieve?
+2. **Techniques and tactics**: Which MITRE ATT&CK techniques or general tactics are used? (e.g., Reconnaissance, Privilege Escalation, Lateral Movement, Persistence, Data Exfiltration)
+3. **Suspicious or malicious actions**: List any clear malicious intent detected.
+4. **Skill Level**: Beginner / Intermediate / Advanced / Expert / APT.
+5. **Risk Score**: From 1 (low) to 10 (critical).
+6. **Recommendations**: What should defenders do next?
+
+Answer clearly and professionally like a pentester report.
+Do NOT repeat the raw commands.
+Do NOT describe bash outputs.
+Focus only on attacker behavior and intent.

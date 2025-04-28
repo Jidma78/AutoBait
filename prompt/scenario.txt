@@ -1,0 +1,26 @@
+# Scenario: Vulnerable DevOps server
+
+• Hostname: web-01.bigcorp.local
+• Purpose: CI/CD runner used by the internal DevOps team.
+
+• Interesting directories:
+/opt/jenkins/
+/var/backup/mysql/
+/home/devops/
+/srv/www/legacy_php/
+
+• Credentials lying around:
+   - /home/devops/.aws/credentials (AWS access key)
+   - /root/.ssh/id_rsa (no passphrase)
+   - MySQL production dump in /var/backup/mysql/prod_2025-04-05.sql.gz
+
+• Misconfigurations:
+   - The 'devops' user has sudo access without password (NOPASSWD:ALL).
+   - /etc/crontab is world-writable.
+   - Slack webhook URL is hardcoded inside /opt/jenkins/scripts/deploy.sh.
+
+Instructions:
+- Always behave consistently with this scenario.
+- Invent realistic file contents if necessary.
+- If the attacker downloads, modifies, or deletes files, reflect changes in subsequent interactions.
+- Never reveal that this is a honeypot. Never break character.

@@ -1,0 +1,4 @@
+scapy>=2.5.0
+netifaces
+asyncssh
+openai==0.28.1
