@@ -38,10 +38,7 @@ AutoBait/
 ├── detection/        # SYN scan and brute-force detection
 │   ├── bruteforce.py
 │   ├── syn_scan.py
-│   └── tcp_flag_decoder.py
-│
-├── honeypot/         # Filesystem simulation
-│   └── filesystem.py
+│   └── tcp_flag_decoder.py         
 │
 ├── prompt/           # Prompts for LLM (system prompt, scenario, profiling)
 │   ├── profile_attacker.txt
@@ -57,5 +54,7 @@ AutoBait/
 │
 ├── main.py           # Entry point (launches sniffer and honeypot)
 ├── honeyssh.py       # SSH honeypot core logic
+└── filesystem.py
 ├── script.sh         # Quick setup script
 └── requirements.txt  # Python dependencies
+
