@@ -23,4 +23,7 @@ It automatically **sniffs the network** for port scans and brute-force attempts,
 | 🖥️ Real bash behavior       | No AI artifacts, no code blocks, no apologies — strictly bash-like answers |
 | 📜 Lightweight logging      | Neat session logs (JSONL format) and profiling reports                     |
 
----
+
+
+
+AutoBait/ │ ├── core/ # Traffic sniffer, honeypot launcher, logger ├── detection/ # SYN scan and brute-force detection ├── honeypot/ # Filesystem simulation (filesystem.py) ├── prompt/ # Prompts for LLM (system prompt, scenario, profiling) ├── output/ │ ├── log/ # Logs (honeypot sessions, IDS alerts) │ └── sessions/ # Attacker session profiles ├── utils/ # Helpers (network info, etc.) ├── main.py # Entry point ├── honeyssh.py # SSH honeypot logic └── script.sh # Quick setup
