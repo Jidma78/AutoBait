@@ -67,7 +67,8 @@ AutoBait/
 git clone https://github.com/Jidma78/AutoBait.git
 cd AutoBait
 bash script.sh
-source .venvv/bin/activate
+source .venv/bin/activate
+export export OPENROUTER_API_KEY=sk....
 python3 main.py
 ```
 
